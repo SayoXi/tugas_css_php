@@ -1,0 +1,66 @@
+body{
+    font-family: 'Open Sans', cursive;
+    margin: 0;
+    background-color: gray;
+}
+
+.gambarBanner{
+    text-align: center;
+}
+
+.gambarBanner img{
+    border-radius: 18px;
+}
+
+.gambarKotak img {
+    border-radius: 18px;
+}
+
+.gambarKotak img {
+    border-radius: 18px;
+    margin: 10px;
+}
+.gambarKotak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS untuk tampilan mobile (lebar kurang dari 768px) */
+@media (max-width: 768px) {
+    .gambarKotak {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Membuat 2 kolom dengan lebar yang sama */
+        gap: 10px;
+        /* Jarak antara elemen */
+        text-align: center;
+        /* Mengatur teks ke tengah */
+        padding-right: 20px;
+    }
+    .gambarKotak img {
+        border-radius: 18px;
+        /* Menghapus border-radius di perangkat mobile */
+        max-width: 100%;
+        /* Memastikan gambar tidak melebihi lebar kotak */
+        height: auto;
+        /* Menjaga aspek rasio gambar */
+    }
+
+    .gambarBanner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* Membuat 2 kolom dengan lebar yang sama */
+        text-align: center;
+        /* Mengatur teks ke tengah */
+    }
+    
+    .gambarBanner img{
+        border-radius: 18px;
+        /* Menghapus border-radius di perangkat mobile */
+        max-width: 100%;
+        /* Memastikan gambar tidak melebihi lebar kotak */
+        height: auto;
+        /* Menjaga aspek rasio gambar */
+    }
+}
